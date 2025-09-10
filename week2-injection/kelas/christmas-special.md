@@ -1,6 +1,6 @@
 # Christmas Special
 
-![image](../../../Assets/5-4.png)
+![image](../../Assets/5-4.png)
 
 ## Clue provided
 
@@ -16,7 +16,7 @@
 
 From previous challenge, we know that there is an item with id 10 which is the "Christmas Special Offer of 2014".
 
-![image](../../../Assets/5-1.png)
+![image](../../Assets/5-1.png)
 
 
 ### Exploiting the vulnerability
@@ -27,13 +27,13 @@ When we try to add to basket another item we get a post request to the following
 http://localhost:3000/api/BasketItems
 ```
 
-![image](../../../Assets/5-2.png)
+![image](../../Assets/5-2.png)
 
 we can change the `ProductId` to `10` to add the Christmas Special Offer of 2014 to our basket.
 
-![image](../../../Assets/5-3.png)
+![image](../../Assets/5-3.png)
 
 ### Result 
 
-![image](../../../Assets/5-5.png)
+![image](../../Assets/5-5.png)
 

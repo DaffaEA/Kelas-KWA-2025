@@ -1,6 +1,6 @@
 # Database Schema
 
-![image](../../../Assets/4-1.png)
+![image](../../Assets/4-1.png)
 
 ## Clue provided
 
@@ -20,7 +20,7 @@ The vulnarability used in this challenge is SQL Injection. We can exploit this v
 http://localhost:3000/#/search?q=
 ```
 
-![image](../../../Assets/4-3.png)
+![image](../../Assets/4-3.png)
 
 ### Exploiting the vulnerability
 
@@ -34,12 +34,12 @@ To extract the schema information, we can use the following payload using burpsu
 
 ### Result
 
-![image](../../../Assets/4-4.png)
-![image](../../../Assets/4-5.png)
+![image](../../Assets/4-4.png)
+![image](../../Assets/4-5.png)
 
 
 ## Additional Information
 
 From this challenge, we learn the existence of item with id 10 which is the "Christmas Special Offer of 2014". This item will be used in the next challenge.
 
-![image](../../../Assets/5-1.png)
+![image](../../Assets/5-1.png)

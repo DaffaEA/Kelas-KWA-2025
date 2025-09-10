@@ -1,6 +1,6 @@
 # NoSQL Injection
 
-![image](../../../Assets/6-1.png)
+![image](../../Assets/6-1.png)
 
 ## Clue provided
 
@@ -21,7 +21,7 @@ When we interrupt the edit review process with burpsuite, we can see that the pa
 }
 ```
 
-![image](../../../Assets/6-2.png)
+![image](../../Assets/6-2.png)
 
 ### Exploiting the vulnerability
 
@@ -37,9 +37,9 @@ Change the id value to include a  query operator. For example, using `$ne` (not 
 ```
 This will update all reviews because the condition `$ne: null` will match all review ids that are not null.
 
-![image](../../../Assets/6-3.png)
+![image](../../Assets/6-3.png)
 
 ### Result
 
-![image](../../../Assets/6-4.png)
+![image](../../Assets/6-4.png)
 

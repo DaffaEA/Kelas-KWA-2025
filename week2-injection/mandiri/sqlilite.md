@@ -27,8 +27,8 @@ username : admin'--
 
 at first we get no flag
 
-![image](../../../Assets/10-3.png)
+![image](../../Assets/10-3.png)
 
 we can get the flag by doing inspect element on the page and search for the flag
 
-![image](../../../Assets/10-4.png)
+![image](../../Assets/10-4.png)

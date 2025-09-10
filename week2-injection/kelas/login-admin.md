@@ -1,6 +1,6 @@
 # Login Admin
 
-![image](../../../Assets/1-1.png)
+![image](../../Assets/1-1.png)
 
 ## Clue provided
 
@@ -16,18 +16,18 @@
 
 ### Identifying vulnerability
 
-![image](../../../Assets/1-5.png)
+![image](../../Assets/1-5.png)
 When we try logging in using special characters such as quotes ('), we get an error message. This indicates that the input fields are vulnerable to SQL Injection.
 
 ### Exploiting the vulnerability
 
 1. **Using Known Email Address**: If we know the admin's email address, we can use a simple SQL Injection payload to bypass the password check.
 
-![image](../../../Assets/1-2.png)
+![image](../../Assets/1-2.png)
 
 from the image above, we can see that the email address is `admin@juice-sh.op`.
 
-2. **Using SQL Injection Payload**: We can use the following payload in the password field to bypass authentication:
+1. **Using SQL Injection Payload**: We can use the following payload in the password field to bypass authentication:
 
 ```
 admin@juice-sh.op'--
@@ -35,10 +35,10 @@ admin@juice-sh.op'--
 
 This payload comments out the rest of the SQL query, effectively ignoring the password check.
 
-![image](../../../Assets/1-3.png)
+![image](../../Assets/1-3.png)
 
 ### Successful Login
 
 After submitting the form with the SQL Injection payload, we are logged in as the admin.
 
-![image](../../../Assets/1-4.png)
+![image](../../Assets/1-4.png)

